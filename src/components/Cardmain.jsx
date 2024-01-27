@@ -1,6 +1,12 @@
-import { Button, Card, CardContent, TextField, Typography } from "@mui/material";
+import * as React from 'react';
+import { Button, Card, CardContent, FormControl, InputLabel, MenuItem, Select, Typography } from "@mui/material";
 
 export default function Cardmain() {
+    const [workplace, setWorkplace] = React.useState('');
+
+    const handleChange = (event) => {
+      setWorkplace(event.target.value);
+    };
       
     return (
         <Card
@@ -19,10 +25,11 @@ export default function Cardmain() {
                 <Typography 
                     sx={{
                         mt: '30px',
-                        ml: '15px'
+                        ml: '15px',
+                        letterSpacing: '-3px'
                     }}                   
                     fontSize= '45px'
-                    fontWeight= '700'
+                    fontWeight= '900'
                     lineHeight={ '-1.5px' }
                     align="inherit"                  
                 >
@@ -42,26 +49,29 @@ export default function Cardmain() {
                     Whether you’re an established enterprise or a growing startup, discover spaces that inspire which will best your most impactful work.
                 </Typography>
 
-                <TextField
-                    id="filled-select-currency-native"
-                    select
-                    label="Find workplace"                    
-                    SelectProps={{
-                        native: true,
-                    }}                    
-                    variant="outlined"
-                    fullWidth
-                    sx={{
-                        width: '440px',  
-                        height: '55px',
-                        mt: '30px',
-                        ml: '15px',
-                        mb: '20px'
-                    }}
-                >                               
-                    
-                </TextField>
-            
+                <div style={{
+                        marginTop: '10px',
+                        marginLeft: '15px',
+                        marginRight: '15px',
+                        marginBottom: '10px'   
+                    }}>
+                    <FormControl fullWidth>
+                        <InputLabel id="demo-simple-select-label">Find workplace</InputLabel>
+                        <Select
+                            labelId="demo-simple-select-label"
+                            id="demo-simple-select"
+                            value={workplace}
+                            label="Find workplace"
+                            onChange={handleChange}
+                        >
+                            <MenuItem value={'Chicago, New York'}>Chicago, New York</MenuItem>
+                            <MenuItem value={'Florida, Miami'}>Florida, Miami</MenuItem>
+                            <MenuItem value={'California, San Francisco'}>California, San Francisco</MenuItem>
+                            <MenuItem value={'New Mexico, Albuquerque'}>New Mexico, Albuquerque</MenuItem>
+                        </Select>
+                    </FormControl>
+                </div>
+                
                 <Button
                     size="large"
                     variant="contained"

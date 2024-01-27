@@ -1,0 +1,13 @@
+@import url("./css/fonts.css");
+
+
+* {
+    font-family: 'DM Sans','sans-serif';
+}
+
+.first-section{
+    min-width: 100vh;
+    min-height: 100vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

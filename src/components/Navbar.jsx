@@ -1,4 +1,5 @@
-import { AppBar, Box, Button, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Button, Toolbar } from '@mui/material';
+import logo from '../assets/img/logo.svg'
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
     
@@ -20,13 +21,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
               mr: '40px'
             }}
           >
-            <Typography               
-              fontSize= '20px'
-              fontWeight= '700'
-              lineHeight= '24px'                                                     
-            >
-              StartupLanding
-            </Typography>
+          <img src={logo}  />
         
           <Box
             flexGrow={1}
@@ -40,6 +35,9 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
               fontSize= '16px'              
               lineHeight= '33px' 
               align="center"
+              style={{
+                textTransform: 'capitalize'
+              }}
             >
               Home
             </Button>
@@ -50,6 +48,9 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
               lineHeight= '33px' 
               align="center"
               endIcon={<ArrowDropDownIcon />}
+              style={{
+                textTransform: 'capitalize'
+              }}
             >
               Advertise
             </Button>
@@ -60,6 +61,9 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
               lineHeight= '33px' 
               align="center"
               endIcon={<ArrowDropDownIcon />}
+              style={{
+                textTransform: 'capitalize'
+              }}
             >
               Supports
             </Button>
@@ -69,6 +73,9 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
               fontSize= '16px'              
               lineHeight= '33px' 
               align="center"
+              style={{
+                textTransform: 'capitalize'
+              }}
             >
               Contact
             </Button>
@@ -78,6 +85,9 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
               fontSize= '16px'              
               lineHeight= '33px' 
               align="center"
+              style={{
+                textTransform: 'capitalize'
+              }}
             >
               About us
             </Button>
