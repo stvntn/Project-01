@@ -1,13 +1,283 @@
 @import url("./css/fonts.css");
 
-
 * {
     font-family: 'DM Sans','sans-serif';
 }
 
 .first-section{
-    min-width: 100vh;
-    min-height: 100vw;
-    background-repeat: no-repeat;
-    background-size: contain;
+     background-size: auto; 
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+
+.first-section2{
+    margin-left: 130px;
+    margin-right: 110px;   
+}
+
+        /* SectionThree */
+.div-sectionThree{
+    padding: 0 100px;
+    margin-bottom: 80px;
+}
+
+.typography1{
+    color: rgba(141, 68, 139, 1);    
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+}
+
+.typography2{
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.img{    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.button-caja3{
+    margin-top: 10px !important;
+    text-transform: capitalize !important;    
+}
+
+
+
+
+
+        /* SectionFour */
+.four-section{
+    background-color: rgba(2, 7, 24, 1);    
+}
+
+.four-section2{
+    padding: 60px 120px;
+}
+
+.typography3{
+    display: flex;
+    justify-content: center;    
+    font-size: 15px !important;
+    color: rgba(255, 255, 255, 1);    
+}
+
+.typography4{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
+    font-size: 27px !important;
+    color: rgba(255, 255, 255, 1);
+}
+
+.div-botones{
+    margin: 0 38%;      
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    border: 1px solid rgba(243, 244, 245, 0.1);
+    border-radius: 5px;
+}
+
+.boton-monthly{
+    margin-top:"4px";
+    background-color: white !important;
+    color: black !important; 
+}
+
+.div-four-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin: 35px;
+    font: white;    
+}
+
+.card1{ 
+    width: 49%;    
+    padding-top: 20px;
+    padding-left: 0px;
+    background-color: transparent !important;
+    border: 1px solid rgba(243, 244, 245, 0.1);
+}
+
+.lista{
+    color: white;
+    font-size: 9px;
+}
+
+.div-price1-1{
+    width: 100%;
+    height: 120px;    
+}
+
+.div-price1-2{
+    padding: 35px 20px;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card2{      
+    width: 49%;       
+}
+
+.content-card2{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.div-price2-1{
+    width: 100%;
+    height: 120px;
+    background-color: rgba(240, 240, 245, 1);
+}
+
+.div-price2-2{
+    padding: 35px 20px;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+            /* SectionFive */
+.primer-div{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+                
+.img1{
+    width: 500px;
+    height: 100%;
+}
+
+.segundo-div{
+    width: 400px;
+    height: 300px;
+}
+
+.primer-p{
+    font-size: 34px;
+}
+
+.segundo-p{
+    font-size: 17px;
+}
+
+.div-blogpost{
+    display: flex;
+    text-align: center;
+    align-items: center;
+flex-direction: column;
+}
+
+.tercer-p{
+    margin-top: 30px;
+    font-size: 15px;
+    color: rgba(141, 68, 139, 1);
+    font-weight: 500;
+}
+
+.cuarto-p{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 23px;
+}
+
+.div-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-card{
+    color: grey !important;
+}
+
+.dividivi{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(2, 7, 24, 1); 
+}
+
+.p-end-1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.p-end-2{    
+    margin-bottom: 50px;
+    font-size: 12px;
+    color: gray;
+}
+
+.dividivi-2{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 360px;
+}
+
+.texfield{
+    width: 300px !important;
+    height: 50px !important;   
+    border-radius: 1% !important;
+}
+
+.boton-end{
+    width: 120px;
+    height: 50px;
+    
+    color: rgba(2, 7, 24, 1) !important;
+    background-color: white !important;
+    text-transform: none !important;
+}
+
+.dividivider{
+    margin-top: 100px !important;
+    margin-left: 100px !important; 
+    margin-right: 100px !important;
+
+    width: 930px;
+    
+    background-color: rgba(255, 255, 255, 0.2);    
+}
+
+.dividivi-3{
+    padding: 0px 100px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dividivi-4{
+    display: flex;
+}
+
+.logo{
+    width: 170px;
+    height: 37px;
+}
+
+.p-end-3{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.boton-end-2{
+    text-transform: none !important;
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.5) !important;
 }

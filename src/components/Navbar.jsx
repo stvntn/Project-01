@@ -13,15 +13,10 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
           elevation={0}
         > 
           <Toolbar 
-            align= 'center'            
-            sx={{
-              
-              mt: '10px',
-              ml: '40px',
-              mr: '40px'
-            }}
+            align= 'center'
           >
-          <img src={logo}  />
+
+          <img src={logo}  width= '130px'/>
         
           <Box
             flexGrow={1}
@@ -32,8 +27,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
           >
             <Button  
               color="inherit"
-              fontSize= '16px'              
-              lineHeight= '33px' 
+              fontSize= '16px'
               align="center"
               style={{
                 textTransform: 'capitalize'
@@ -44,8 +38,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
             <Button
               color="inherit"
-              fontSize= '16px'              
-              lineHeight= '33px' 
+              fontSize= '16px'
               align="center"
               endIcon={<ArrowDropDownIcon />}
               style={{
@@ -57,8 +50,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
             <Button
               color="inherit"
-              fontSize= '16px'              
-              lineHeight= '33px' 
+              fontSize= '16px'
               align="center"
               endIcon={<ArrowDropDownIcon />}
               style={{
@@ -70,8 +62,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
             <Button  
               color="inherit"
-              fontSize= '16px'              
-              lineHeight= '33px' 
+              fontSize= '16px'
               align="center"
               style={{
                 textTransform: 'capitalize'
@@ -82,10 +73,9 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
             <Button  
               color="inherit"
-              fontSize= '16px'              
-              lineHeight= '33px' 
+              fontSize= '16px'
               align="center"
-              style={{
+              style={{                
                 textTransform: 'capitalize'
               }}
             >
@@ -95,8 +85,10 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
             <Button
               variant="contained"            
-              fontSize= '16px'              
-              lineHeight= '24px'            
+              fontSize= '16px'
+              style={{                
+                textTransform: 'none'
+              }}            
             >
               Join us now
             </Button>
