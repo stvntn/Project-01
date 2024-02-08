@@ -10,6 +10,24 @@ import play from '../assets/Icons/play.svg'
 
 export default function SectionTwo() {
 
+    const smallCards = [
+        {
+            title: '1000 ft2',
+            subTitle: 'you will get 1000ft square space facility here.',
+            icon: scanner
+        },
+        {
+            title: '80 Members',
+            subTitle: 'you will get advantage to live 80+ member here.',
+            icon: member
+        },
+        {
+            title: '100 mbps',
+            subTitle: 'Internet speed is much better thjan others.',
+            icon: wifi
+        },
+    ] 
+
     return (
 
         <>
@@ -40,7 +58,7 @@ export default function SectionTwo() {
                         mx: '100px'
                     }}                
                 >
-                    This guys are using our service and they're
+                    This guys are using our service and they&apos; re
                     more than happier ever.
                 </Typography>
 
@@ -51,18 +69,12 @@ export default function SectionTwo() {
             </Box>
             
             <Box
-                sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',                
-                    padding: '100px',
-                    position: 'relative'
-                }}
+                className="box-good-place"
             >
 
-                <Box>
+                <Box className="box-left">
                     <Typography
-                        fontSize= '37px'                    
-                        marginRight={ '50px' }                               
+                        className="title-box-left"                               
                     >
                         Some good place to 
                         where can build your 
@@ -70,9 +82,7 @@ export default function SectionTwo() {
                     </Typography>
 
                     <Typography
-                        fontSize= '16px'
-                        marginRight={ '50px' }
-                        marginTop={ '20px' } 
+                        className="sub-title-box-left"  
                     >
                         Coworking offers beautifully crafted workspaces where 
                         people can create, connect, and grow their businesses at 
@@ -84,82 +94,56 @@ export default function SectionTwo() {
                         sx={{ 
                             mt: '50px',
                             display: 'flex',
-                            JustifyContent: 'spaceBetween'
+                            JustifyContent: 'spaceBetween',
+                            width: '100%',
+                            position: 'relative'
                         }}   
                     >
-                        <Card bgcolor="transparent" elevation={0} sx= {{width: '30%'}} display= 'flex'>
-                            <img src= {scanner} width= '25px' />
-                            <Typography>
-                                1000 ft2
-                            </Typography>
-                            <Typography
-                                fontSize= '12px'                        
-                            >
-                                you will get 1000ft square
-                                space facility here.
-                            </Typography>
-                        </Card>
-                        <Card bgcolor="transparent" elevation={0} sx= {{width: '30%', mx: '20px'}} display= 'flex'>
-                            <img src= {member} width= '25px' />
-                            <Typography>
-                                80 Members
-                            </Typography>
-                            <Typography
-                                fontSize= '12px'                        
-                            >
-                                you will get advantage to 
-                                live 80+ member here.
-                            </Typography>
-                        </Card>
-                        <Card bgcolor="transparent" elevation={0} sx= {{width: '30%'}} display= 'flex'>
-                            <img src= {wifi} width= '25px' />
-                            <Typography>
-                                100 mbps
-                            </Typography>
-                            <Typography
-                                fontSize= '12px'                        
-                            >
-                                Internet speed is much better thjan others.
-                            </Typography>
-                        </Card>
+                        { smallCards.map((card, index) => (
+                           <Card 
+                            key={card.title} 
+                            bgcolor="transparent" 
+                            elevation={0} 
+                            display='flex' 
+                            className={ `card-small ${index === 1 ? 'second-card-small' : ''}`}>
+                                <img src= {card.icon} width= '25px' />
+                                <Typography className="title-card-small">
+                                    { card.title }
+                                </Typography>
+                                <Typography  
+                                    className="sub-title-card-small"                     
+                                >
+                                    { card.subTitle }
+                                </Typography>
+                            </Card>
+                        ))}
                     </Box>
 
                 </Box>
 
-                <Box>
-                    <img src= {img2} 
-                        width= '450px'
-                        height= '450px'
-                    />
-                </Box>
-
+                <Box className="box-right">
+                    <img src= {img2} className="img-side-box-right" />
                     <Card 
-                    sx={{
-                            position: 'absolute',
-                            top: '25%',
-                            left: '67%',
-                            transform: 'translate(-100%, -50%)',
-                            width:"215px", 
-                            height:"80px",
+                        className="floating-purple-card"                    
+                        sx={{
                             bgcolor: 'primary.main',
-                            display: 'flex',
-                            padding: '10px'
-                        }}>
+                        }}
+                        >
                         <Box 
                             display="flex" 
                             alignItems="center"
                         >
-                            <img src= {play} width= '40px' style={{ marginRight: '16px' }} />
+                            <img src= {play} className="img-play" />
                         <Box sx={{ display: 'flex', flexDirection: 'column' }}>                               
                             <Typography                                 
-                                fontSize= '13px'
                                 color= 'white'
+                                className="title-cpurple"
                             >
                                 Kin Coworking Space
                             </Typography>
                             <Typography
-                                fontSize= '11px'
                                 variant="inherit"
+                                className="sub-title-cpurple"
                                 style={{color: '#FFFFFF60'}}
                             >
                                 442 Broadway, New York
@@ -167,6 +151,7 @@ export default function SectionTwo() {
                         </Box>                        
                         </Box>                    
                     </Card>
+                </Box>
             </Box>
         </>
     )
