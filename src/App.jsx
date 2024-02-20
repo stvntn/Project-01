@@ -6,17 +6,20 @@ import SectionTwo from '/src/components/SectionTwo';
 import SectionThree from './components/SectionThree';
 import SectionFour from './components/SectionFour';
 import SectionFive from './components/SectionFive';
+import Pie from './components/Pie';
 
-import fondo from './assets/img/fondo.svg'
+// import fondo from './assets/img/fondo.svg'
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
     <>
-    <div className='first-section' style={{ backgroundImage: `url(${fondo})` }} >      
-      <Container fixed>
-         <SectionFirst />
-      </Container>
-    </ div>
+      <div className='first-section'>      
+        <Container>
+        <Navbar />                
+        <SectionFirst />
+        </Container>
+      </div>    
 
       <Container fixed>
         <SectionTwo />
@@ -32,9 +35,15 @@ export default function App() {
       </Container>
     </div>
 
-    <Container fixed>
+    <Container>
       <SectionFive />
     </Container>
+
+    <div className='pie'>
+      <Container fixed>
+        <Pie />
+      </Container>
+    </div>
     </>
   )
 }

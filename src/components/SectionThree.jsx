@@ -20,7 +20,7 @@ export default function sectionThree() {
                 Let’s meet our interior room decoration
             </Typography>
 
-        <div className="img">
+        <div className="img-monda">
             <div>
             <img src= { one } width= "95%"  style={{marginBottom: '10px'}} />
             <img src= { four } width= "95%" />

@@ -43,28 +43,28 @@ export default function SectionFour() {
                                 Starter Pack
                             </ListSubheader>               
                             <ListItem>
-                            <ListItemIcon>
+                            <ListItemIcon className="list-item-icon-card">
                                 <CheckCircleIcon style={{color:"rgba(63, 219, 177, 1)"}} fontSize="small"/>
                             </ListItemIcon>
-                                <ListItemText primary="Ultimate access to all course, exercises and assessments"/>
+                                <ListItemText className="list-item-text" primary="Ultimate access to all course, exercises and assessments"/>
                             </ListItem>
                             <ListItem>   
-                            <ListItemIcon>
+                            <ListItemIcon className="list-item-icon-card">
                                 <CheckCircleIcon style={{color:"rgba(63, 219, 177, 1)"}} fontSize="small"/>
                             </ListItemIcon>
-                                <ListItemText primary="Free acess for all kind of exercise corrections with downloads."/>
+                                <ListItemText className="list-item-text" primary="Free acess for all kind of exercise corrections with downloads."/>
                             </ListItem>
                             <ListItem>
-                            <ListItemIcon>
+                            <ListItemIcon className="list-item-icon-card">
                                 <CheckCircleIcon style={{color:"rgba(63, 219, 177, 1)"}} fontSize="small"/>
                             </ListItemIcon>
-                                <ListItemText primary="Total assessment corrections with free download access system"/>
+                                <ListItemText className="list-item-text" primary="Total assessment corrections with free download access system"/>
                             </ListItem>
                             <ListItem>
-                            <ListItemIcon>
+                            <ListItemIcon className="list-item-icon-card">
                                 <CancelIcon sx={{color:"grey"}} fontSize="small"/>
                             </ListItemIcon>
-                                <ListItemText primary="Unlimited download of courses on the mobile app contents"/>
+                                <ListItemText className="list-item-text" sx={{color: 'grey'}} primary="Unlimited download of courses on the mobile app contents"/>
                             </ListItem>                       
                         </List>
                     </CardContent>                    
@@ -93,28 +93,28 @@ export default function SectionFour() {
                                 Family Pack
                             </ListSubheader>         
                             <ListItem>
-                            <ListItemIcon>
+                            <ListItemIcon className="list-item-icon-card">
                                 <CheckCircleIcon style={{color:"rgba(63, 219, 177, 1)"}} fontSize="small"/>
                             </ListItemIcon>
-                                <ListItemText primary="Ultimate access to all course, exercises and assessments"/>
+                                <ListItemText className="list-item-text" primary="Ultimate access to all course, exercises and assessments"/>
                             </ListItem>
                             <ListItem>   
-                            <ListItemIcon>
+                            <ListItemIcon className="list-item-icon-card">
                                 <CheckCircleIcon style={{color:"rgba(63, 219, 177, 1)"}} fontSize="small"/>
                             </ListItemIcon>
-                                <ListItemText primary="Free acess for all kind of exercise corrections with downloads."/>
+                                <ListItemText className="list-item-text" primary="Free acess for all kind of exercise corrections with downloads."/>
                             </ListItem>
                             <ListItem>
-                            <ListItemIcon>
+                            <ListItemIcon className="list-item-icon-card">
                                 <CheckCircleIcon style={{color:"rgba(63, 219, 177, 1)"}} fontSize="small"/>
                             </ListItemIcon>
-                                <ListItemText primary="Total assessment corrections with free download access system"/>
+                                <ListItemText className="list-item-text" primary="Total assessment corrections with free download access system"/>
                             </ListItem>
                             <ListItem>
-                            <ListItemIcon>
+                            <ListItemIcon className="list-item-icon-card">
                                 <CheckCircleIcon style={{color:"rgba(63, 219, 177, 1)"}} fontSize="small"/>
                             </ListItemIcon>
-                                <ListItemText primary="Unlimited download of courses on the mobile app contents"/>
+                                <ListItemText className="list-item-text" primary="Unlimited download of courses on the mobile app contents"/>
                             </ListItem>                     
                         </List>                                               
                     </CardContent>

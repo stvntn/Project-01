@@ -1,89 +1,99 @@
-import { AppBar, Box, Button, Toolbar } from '@mui/material';
+import { AppBar, Box, Button, Drawer, IconButton, Toolbar } from '@mui/material';
 import logo from '../assets/img/logo.svg'
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import MenuIcon from '@mui/icons-material/Menu';
+import NavListDrawer from './NavListDrawer';
+import { useState } from 'react';
+
+import HomeIcon from '@mui/icons-material/Home';
+import WarningIcon from '@mui/icons-material/Warning';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import ContactsIcon from '@mui/icons-material/Contacts';
+import GroupsIcon from '@mui/icons-material/Groups';
+
+  const navLinks = [
+    {
+      tittle: "Home", 
+      path: "#home",
+      icon: <HomeIcon />      
+    },
+    {
+      tittle: "Advertise", 
+      path: "#advertise",
+      icon: <WarningIcon />,
+      // icon: <ArrowDropDownIcon />,
+    },
+    {
+      tittle: "Supports",
+      path: "#supports",
+      icon: <SupportAgentIcon />,
+      // icon: <ArrowDropDownIcon />,
+    },
+    {
+      tittle: "Contact",
+      path: "#contact",
+      icon: <ContactsIcon />
+    },
+    {
+      tittle: "About us",
+      path: "#about us",
+      icon: <GroupsIcon />
+    },
+  ]
     
   export default function Navbar() {
+
+      const [open, setOpen] = useState(false)
       
     return (
       <>
-        <AppBar 
-          position="static" 
-          color="transparent"
-          elevation={0}
+        <Drawer 
+          open={open} 
+          anchor='left'
+          onClose={() => setOpen(false)}          
         > 
-          <Toolbar 
-            align= 'center'
-          >
+          <NavListDrawer navLinks={navLinks}/> 
+        </Drawer>
 
-          <img src={logo}  width= '130px'/>
+        <AppBar 
+          
+          className='app-bar'
+        > 
+          <Toolbar>
+          
+          <IconButton 
+            size='large'
+            onClick={() => setOpen(true)}
+            className='boton-drawer'
+          >  
+            <MenuIcon /> 
+          </IconButton>
+
+          <img src={logo} className='logo-main'/>
         
-          <Box
-            flexGrow={1}
-            position={'center'}
-            sx={{              
-              gap: 2
-            }}
-          >
-            <Button  
-              color="inherit"
-              fontSize= '16px'
-              align="center"
-              style={{
-                textTransform: 'capitalize'
-              }}
-            >
-              Home
-            </Button>
+          <div className='botones-encabezado'>
+            {
+              navLinks.map((item) => (
+                <Button
+                  key={item.tittle}
+                  component='a'
+                  href={item.path}
+                  color='secondary'
+                  fontSize= '20px'
+                  align="center"
+                  style={{
+                    textTransform: 'none',
+                    fontWeight: '500'
+                  }}
+                >
+                  {item.tittle}
+                </Button>
+              ))
+            }
+          </div>
 
-            <Button
-              color="inherit"
-              fontSize= '16px'
-              align="center"
-              endIcon={<ArrowDropDownIcon />}
-              style={{
-                textTransform: 'capitalize'
-              }}
-            >
-              Advertise
-            </Button>
-
-            <Button
-              color="inherit"
-              fontSize= '16px'
-              align="center"
-              endIcon={<ArrowDropDownIcon />}
-              style={{
-                textTransform: 'capitalize'
-              }}
-            >
-              Supports
-            </Button>
-
-            <Button  
-              color="inherit"
-              fontSize= '16px'
-              align="center"
-              style={{
-                textTransform: 'capitalize'
-              }}
-            >
-              Contact
-            </Button>
-
-            <Button  
-              color="inherit"
-              fontSize= '16px'
-              align="center"
-              style={{                
-                textTransform: 'capitalize'
-              }}
-            >
-              About us
-            </Button>
-          </Box>
-
-            <Button
+            <Button className='boton-join'
               variant="contained"            
               fontSize= '16px'
               style={{                

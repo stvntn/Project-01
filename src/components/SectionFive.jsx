@@ -1,4 +1,4 @@
-import { Button, CardContent, Divider, TextField  } from "@mui/material";
+import { Button, Card, CardContent  } from "@mui/material";
 
 import img1 from '../assets/SectionFive/img1.svg';
 import card1 from '../assets/SectionFive/card1.svg';
@@ -6,7 +6,7 @@ import card2 from '../assets/SectionFive/card2.svg';
 import card3 from '../assets/SectionFive/card3.svg';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import TextsmsIcon from '@mui/icons-material/Textsms';
-import logo from '../assets/SectionFive/logo.svg'
+
 
 export default function SectionFive() {
     
@@ -41,8 +41,8 @@ export default function SectionFive() {
                     </p>
                 </div>
                 <div className="div-card">
-                    <card className='card1-sectionFive'>
-                        <img src= {card1} width= '90%'/>
+                    <Card className='card1-sectionFive'>
+                        <img src= {card1}/>
                         <CardContent>
                             <p>
                                 How to work with prototype design with adobe xd featuring tools
@@ -51,10 +51,10 @@ export default function SectionFive() {
                                 22 Comments
                             </Button>
                         </CardContent>
-                    </card>
+                    </Card>
 
-                    <card className='card1-sectionFive'>
-                        <img src= {card2} width= '90%'/>
+                    <Card className='card1-sectionFive'>
+                        <img src= {card2}/>
                         <CardContent>
                             <p>
                                 Create multiple artboard by using figma prototyping development                            </p>
@@ -62,10 +62,10 @@ export default function SectionFive() {
                                 15 Comments
                             </Button>
                         </CardContent>
-                    </card>
+                    </Card>
 
-                    <card className='card1-sectionFive'>
-                        <img src= {card3} width= '90%'/>
+                    <Card className='card1-sectionFive'>
+                        <img src= {card3}/>
                         <CardContent>
                             <p>
                                 Convert your web layout theming easily with sketch zeplin extension                            </p>
@@ -73,68 +73,8 @@ export default function SectionFive() {
                                 18 Comments
                             </Button>
                         </CardContent>
-                    </card>
+                    </Card>
                 </div>
-            </div>
-
-            <div className="dividivi">
-                <div>
-                    <div className="dividivi-p">
-                        <p className="p-end-1">
-                            Subscribe to get best offers.
-                        </p>
-                        <p className="p-end-2">
-                            By subscribing with your mail, you will agree with terms
-                        </p>
-                    </div>
-                
-                    <div className="dividivi-2">
-                        <TextField
-                            variant="filled" 
-                            label="Enter your email"                             
-                            className="texfield"
-                            color="secondary"
-                            sx={{
-                                "& .MuiFormLabel-root": {color:"white", fontSize:"14px"},
-                                bgcolor:'rgba(255, 255, 255, 0.1)',
-                                input: { color: 'white' }                            
-                            }}
-                        />
-                        <Button className="boton-end">
-                            Subscribe us
-                        </Button>
-                    </div>
-                </div>
-                <div >
-                    <Divider className="dividivider" />
-                </div>
-                <div className="dividivi-3">   
-                    <div className="dividivi-4">            
-                        <img src= {logo} className="logo"/>
-                        
-                        <p className="p-end-3">
-                            Copyright by 2019 YourName Inc
-                        </p>                    
-                    </div>
-
-                    <div>
-                        <Button className="boton-end-2">
-                            Home
-                        </Button>
-                        <Button className="boton-end-2">
-                            Adversite
-                        </Button>
-                        <Button className="boton-end-2">
-                            Supports
-                        </Button>
-                        <Button className="boton-end-2">
-                            Marketing
-                        </Button>
-                        <Button className="boton-end-2">
-                            FAQ
-                        </Button>
-                    </div>
-                </div>                
-            </div>
+            </div>            
         </>
     )}

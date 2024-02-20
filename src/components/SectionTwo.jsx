@@ -1,7 +1,11 @@
 import { Card, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
-import logos2 from '../assets/Logos/logos2.svg'
+import UBER from '../assets/Logos/UBER.png'
+import Google from '../assets/Logos/Google.png'
+import PayPal from '../assets/Logos/PayPal.png'
+import Microsoft from '../assets/Logos/Microsoft.png'
+import dribbbel from '../assets/Logos/dribbbel.png'
 import img2 from '../assets/img/img2.svg'
 import member from '../assets/Icons/member.svg'
 import scanner from '../assets/Icons/scanner.svg'
@@ -31,41 +35,39 @@ export default function SectionTwo() {
     return (
 
         <>
-            <Box
-                sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',                
-                    flexDirection: 'column',
-                    px: '260px',
-                    mt: '30px'
-                }}
-            >
-                <Typography                
-                    align="center"                
+            <Box className='box-section2'>
+                <Typography  
+                    className="parrafo1"
                     color="primary"
-                    fontSize={'13px'}
                 >
                     Meet our Clients
                 </Typography>
 
-                <Typography                
-                    align="center"
-                    fontSize={'20px'}
-                    sx={{
-                        mt: '10px',
-                        mb: '60px',
-                        mx: '100px'
-                    }}                
-                >
-                    This guys are using our service and they&apos; re
+                <p className="parrafo2">
+                    This guys are using our service and they&apos;re
                     more than happier ever.
-                </Typography>
+                </p>
+                <div className="div-logos">
+                    <img src= {UBER}
+                        
+                    />
 
-                <img src= {logos2} 
-                    width= '600px'
-                    align= 'center'
-                />
+                    <img src= {Google}
+                        
+                    />
+
+                    <img src= {PayPal}
+                        
+                    />
+
+                    <img src= {Microsoft}
+                        
+                    />
+
+                    <img src= {dribbbel}
+                        
+                     />
+                </div>
             </Box>
             
             <Box
